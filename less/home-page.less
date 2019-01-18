@@ -72,11 +72,8 @@
     
     @media @mobile{
       display:flex;
-      flex-direction: column;
-
-      .text-content{
-        order: 1;
-      }
+      flex-direction: column-reverse;
+      
     }
 
     .text-content {
@@ -93,6 +90,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile{
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
